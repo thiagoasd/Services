@@ -7,4 +7,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Tuiter';
+
+  homeShow: boolean = true;
+  userShow: boolean = false;
+  postShow: boolean = false;
+
+  ativaUsers() {
+    this.homeShow = false;
+    this.postShow = false;
+    this.userShow = true;
+  }
+
+  ativaPosts() {
+    this.homeShow = false;
+    this.userShow = false;
+    this.postShow = true;
+
+  }
 }
